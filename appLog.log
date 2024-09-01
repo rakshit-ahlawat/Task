@@ -1,0 +1,110 @@
+2024-08-30T16:39:12.037+05:30  INFO 86514 --- [task] [restartedMain] com.example.task.TaskApplication         : Starting TaskApplication using Java 17.0.11 with PID 86514 (/home/user/Downloads/task/target/classes started by user in /home/user/Downloads/task)
+2024-08-30T16:39:12.041+05:30 DEBUG 86514 --- [task] [restartedMain] com.example.task.TaskApplication         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-30T16:39:12.045+05:30  INFO 86514 --- [task] [restartedMain] com.example.task.TaskApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T16:39:12.187+05:30  INFO 86514 --- [task] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-30T16:39:12.187+05:30  INFO 86514 --- [task] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-30T16:39:13.556+05:30  INFO 86514 --- [task] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T16:39:13.669+05:30  INFO 86514 --- [task] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 1 JPA repository interface.
+2024-08-30T16:39:14.555+05:30  INFO 86514 --- [task] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-30T16:39:14.572+05:30  INFO 86514 --- [task] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T16:39:14.573+05:30  INFO 86514 --- [task] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-30T16:39:14.667+05:30  INFO 86514 --- [task] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-30T16:39:14.667+05:30  INFO 86514 --- [task] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2479 ms
+2024-08-30T16:39:15.001+05:30  INFO 86514 --- [task] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T16:39:15.083+05:30  INFO 86514 --- [task] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-30T16:39:15.134+05:30  INFO 86514 --- [task] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-30T16:39:15.581+05:30  INFO 86514 --- [task] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T16:39:15.619+05:30  INFO 86514 --- [task] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-30T16:39:15.900+05:30  INFO 86514 --- [task] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@273f2c33
+2024-08-30T16:39:15.903+05:30  INFO 86514 --- [task] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-30T16:39:15.935+05:30  WARN 86514 --- [task] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-30T16:39:16.975+05:30  INFO 86514 --- [task] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-30T16:39:17.021+05:30  INFO 86514 --- [task] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T16:39:17.408+05:30  WARN 86514 --- [task] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T16:39:17.441+05:30  INFO 86514 --- [task] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-08-30T16:39:17.905+05:30  INFO 86514 --- [task] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T16:39:17.943+05:30  INFO 86514 --- [task] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-30T16:39:17.957+05:30  INFO 86514 --- [task] [restartedMain] com.example.task.TaskApplication         : Started TaskApplication in 6.8 seconds (process running for 7.681)
+2024-08-30T16:39:55.923+05:30  INFO 86514 --- [task] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30T16:39:55.924+05:30  INFO 86514 --- [task] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-30T16:39:55.926+05:30  INFO 86514 --- [task] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-30T16:39:56.168+05:30 TRACE 86514 --- [task] [http-nio-8080-exec-3] c.e.task.controller.UserController       : class:UserController , method:getUsers 
+2024-08-30T16:42:09.180+05:30 TRACE 86514 --- [task] [http-nio-8080-exec-2] c.e.task.controller.UserController       : class:UserController , method:deleteUser 
+2024-08-30T16:43:21.787+05:30  INFO 86514 --- [task] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T16:43:21.792+05:30  INFO 86514 --- [task] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-30T16:43:21.800+05:30  INFO 86514 --- [task] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-30T16:45:52.538+05:30  INFO 87144 --- [task] [restartedMain] com.example.task.TaskApplication         : Starting TaskApplication using Java 17.0.11 with PID 87144 (/home/user/Downloads/task/target/classes started by user in /home/user/Downloads/task)
+2024-08-30T16:45:52.546+05:30 DEBUG 87144 --- [task] [restartedMain] com.example.task.TaskApplication         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-30T16:45:52.548+05:30  INFO 87144 --- [task] [restartedMain] com.example.task.TaskApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T16:45:52.702+05:30  INFO 87144 --- [task] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-30T16:45:52.703+05:30  INFO 87144 --- [task] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-30T16:45:54.415+05:30  INFO 87144 --- [task] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T16:45:54.527+05:30  INFO 87144 --- [task] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 1 JPA repository interface.
+2024-08-30T16:45:55.485+05:30  INFO 87144 --- [task] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-30T16:45:55.506+05:30  INFO 87144 --- [task] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T16:45:55.507+05:30  INFO 87144 --- [task] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-30T16:45:55.582+05:30  INFO 87144 --- [task] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-30T16:45:55.583+05:30  INFO 87144 --- [task] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2873 ms
+2024-08-30T16:45:55.858+05:30  INFO 87144 --- [task] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T16:45:55.928+05:30  INFO 87144 --- [task] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-30T16:45:55.966+05:30  INFO 87144 --- [task] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-30T16:45:56.388+05:30  INFO 87144 --- [task] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T16:45:56.423+05:30  INFO 87144 --- [task] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-30T16:45:56.676+05:30  INFO 87144 --- [task] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@419fdcc5
+2024-08-30T16:45:56.679+05:30  INFO 87144 --- [task] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-30T16:45:56.716+05:30  WARN 87144 --- [task] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-30T16:45:57.891+05:30  INFO 87144 --- [task] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-30T16:45:57.951+05:30  INFO 87144 --- [task] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T16:45:58.287+05:30  WARN 87144 --- [task] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T16:45:58.316+05:30  INFO 87144 --- [task] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-08-30T16:45:58.799+05:30  INFO 87144 --- [task] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T16:45:58.855+05:30  INFO 87144 --- [task] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-30T16:45:58.879+05:30  INFO 87144 --- [task] [restartedMain] com.example.task.TaskApplication         : Started TaskApplication in 7.224 seconds (process running for 8.285)
+2024-08-30T16:46:31.802+05:30  INFO 87144 --- [task] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30T16:46:31.802+05:30  INFO 87144 --- [task] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-30T16:46:31.805+05:30  INFO 87144 --- [task] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-30T16:46:32.081+05:30 TRACE 87144 --- [task] [http-nio-8080-exec-2] c.e.task.controller.UserController       : class:UserController , method:getUsers 
+2024-08-30T16:47:01.214+05:30 TRACE 87144 --- [task] [http-nio-8080-exec-3] c.e.task.controller.UserController       : class:UserController , method:deleteUser 
+2024-08-30T16:47:02.735+05:30 TRACE 87144 --- [task] [http-nio-8080-exec-4] c.e.task.controller.UserController       : class:UserController , method:deleteUser 
+2024-08-30T16:47:46.820+05:30 TRACE 87144 --- [task] [http-nio-8080-exec-6] c.e.task.controller.UserController       : class:UserController , method:deleteUser 
+2024-08-30T16:47:47.976+05:30 TRACE 87144 --- [task] [http-nio-8080-exec-5] c.e.task.controller.UserController       : class:UserController , method:deleteUser 
+2024-08-30T16:47:48.992+05:30 TRACE 87144 --- [task] [http-nio-8080-exec-7] c.e.task.controller.UserController       : class:UserController , method:deleteUser 
+2024-08-30T16:48:04.838+05:30 TRACE 87144 --- [task] [http-nio-8080-exec-8] c.e.task.controller.UserController       : class:UserController , method:getUsers 
+2024-08-30T16:49:20.440+05:30  INFO 87144 --- [task] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T16:49:20.444+05:30  INFO 87144 --- [task] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-30T16:49:20.449+05:30  INFO 87144 --- [task] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-30 17:29:14,602 [INFO] com.example.task.TaskApplication [restartedMain] Starting TaskApplication using Java 17.0.11 with PID 90834 (/home/user/Downloads/task/target/classes started by user in /home/user/Downloads/task)
+2024-08-30 17:29:14,608 [DEBUG] com.example.task.TaskApplication [restartedMain] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-30 17:29:14,611 [INFO] com.example.task.TaskApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-30 17:29:14,844 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-30 17:29:14,847 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-30 17:29:16,064 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30 17:29:16,151 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interface.
+2024-08-30 17:29:17,128 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-08-30 17:29:17,143 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-08-30 17:29:17,144 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-30 17:29:17,213 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-30 17:29:17,213 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2365 ms
+2024-08-30 17:29:17,491 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30 17:29:17,567 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-30 17:29:17,619 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-08-30 17:29:18,048 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30 17:29:18,084 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-08-30 17:29:18,342 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@309d099d
+2024-08-30 17:29:18,344 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-08-30 17:29:18,377 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-30 17:29:19,526 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-30 17:29:19,585 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30 17:29:19,978 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30 17:29:20,019 [INFO] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [static/index.html]
+2024-08-30 17:29:20,515 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-08-30 17:29:20,556 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2024-08-30 17:29:20,573 [INFO] com.example.task.TaskApplication [restartedMain] Started TaskApplication in 7.002 seconds (process running for 8.008)
+2024-08-30 17:29:26,884 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 17:29:26,885 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-08-30 17:29:26,888 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-08-30 17:29:27,187 [TRACE] com.example.task.controller.UserController [http-nio-8080-exec-1] class:UserController , method:deleteUser 
+2024-08-30 17:29:32,051 [TRACE] com.example.task.controller.UserController [http-nio-8080-exec-3] class:UserController , method:getUsers 
+2024-08-30 17:30:50,100 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30 17:30:50,104 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-08-30 17:30:50,108 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
