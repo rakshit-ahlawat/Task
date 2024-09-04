@@ -22,4 +22,7 @@ public class UserModel {
 
     }
 
+    public UserModel() {
+        this.password= password;
+    }
 }

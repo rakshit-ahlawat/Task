@@ -1,1 +1,8 @@
+com/example/task/controller/UserController.class
+com/example/task/utility/PasswordGeneratorUtility.class
+com/example/task/repository/UserRepository.class
+com/example/task/entity/User.class
+com/example/task/model/UserResponse.class
+com/example/task/service/UserService.class
 com/example/task/TaskApplication.class
+com/example/task/model/UserModel.class

@@ -1,2 +1,8 @@
 /home/user/Downloads/task/src/main/java/com/example/task/TaskApplication.java
+/home/user/Downloads/task/src/main/java/com/example/task/controller/UserController.java
 /home/user/Downloads/task/src/main/java/com/example/task/entity/User.java
+/home/user/Downloads/task/src/main/java/com/example/task/model/UserModel.java
+/home/user/Downloads/task/src/main/java/com/example/task/model/UserResponse.java
+/home/user/Downloads/task/src/main/java/com/example/task/repository/UserRepository.java
+/home/user/Downloads/task/src/main/java/com/example/task/service/UserService.java
+/home/user/Downloads/task/src/main/java/com/example/task/utility/PasswordGeneratorUtility.java

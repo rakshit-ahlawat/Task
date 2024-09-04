@@ -29,7 +29,7 @@ public class UserService{
 
     public UserResponse registerNewUser(UserModel userModel){
         UserResponse res = new UserResponse(userModel.getUsername(),userModel.getPassword(), userModel.getAddress(),userModel.getEmail());
-        logger.trace("class:UserService , method:registerNewUser ");
+        logger.trace("class:UserService , method:registerNewUser , message= creating a new user with request [/registerNewUser]");
 
         if(repository.findById(userModel.getUsername()).isPresent()){
             res.setStatus("Username was already taken " + userModel.getUsername());
@@ -42,7 +42,7 @@ public class UserService{
         user.setEmail(userModel.getEmail());
         user.setPassword(PasswordGeneratorUtility.generatePassword(userModel.getUsername())); // password is encoded
         user.setActive(true);
-        res.setPassword(user.getPassword());
+        res.setPassword(PasswordGeneratorUtility.decode(user.getPassword()));
         res.setStatus("User register successfully");
         repository.save(user);
         return res;
@@ -52,7 +52,7 @@ public class UserService{
 
     public UserResponse updateUser(UserModel userModel){
         UserResponse res= new UserResponse(userModel.getUsername(),userModel.getPassword(), userModel.getAddress(),userModel.getEmail());
-        logger.trace("class:UserService , method:updateUser ");
+        logger.trace("class:UserService , method:updateUser , message= updating a user with request [/updateUser]");
         if(repository.findById(userModel.getUsername()).isPresent()){
             User user=repository.findById(userModel.getUsername()).get();
             if (!user.isActive()) {
@@ -78,7 +78,7 @@ public class UserService{
 
 
     public UserResponse deleteUser(UserModel userModel){
-        logger.trace("class:UserService , method:deleteUser ");
+        logger.trace("class:UserService , method:deleteUser , message= deleting a user with request [/deleteUser]");
         UserResponse res = new UserResponse(userModel.getUsername(),userModel.getPassword(), userModel.getAddress(),userModel.getEmail());
 
         if(repository.findById(userModel.getUsername()).isPresent()){
@@ -100,11 +100,12 @@ public class UserService{
     }
 
     public List<User> getUser(){
+        logger.trace("class:UserService , method:getUser , message= retrieving all users with request [/getUser]");
         return repository.findAll();
     }
 
     public UserResponse getUserByName(UserModel userModel){
-        logger.trace("class:UserService , method:getUserByName ");
+        logger.trace("class:UserService , method:getUserByName , message= retrieving single user with request [/getUserByName]");
         UserResponse res = new UserResponse(userModel.getUsername(),userModel.getPassword(), userModel.getAddress(), userModel.getEmail());
         if(repository.findById(userModel.getUsername()).isPresent()) {
             User user = repository.findById(userModel.getUsername()).get();
@@ -119,6 +120,28 @@ public class UserService{
         }
         res.setStatus("User Not Found");
         return res;
+    }
+
+    public UserResponse retrieveUserByPassword(UserModel userModel) {
+        logger.trace("class:UserService , method:retrieveUserByPassword , message= retrieving user via password [/retrieveUserByPassword]");
+
+        List<User> users =  repository.findAll();
+        UserResponse res = new UserResponse(userModel.getUsername(), userModel.getPassword(), userModel.getAddress(), userModel.getEmail());
+        for (User us: users) {
+            String decode = PasswordGeneratorUtility.decode(us.getPassword());
+            if (decode.equals(userModel.getPassword())) {
+
+                res.setUsername(us.getUserName());
+               // res.setPassword(us.getPassword());  will return database encoded password
+                res.setAddress(us.getAddress());
+                res.setEmail(us.getEmail());
+                res.setStatus("Here is the User");
+                return res;
+            }
+        }
+        res.setStatus("Password do not match");
+        return res;
+
     }
 
 }
