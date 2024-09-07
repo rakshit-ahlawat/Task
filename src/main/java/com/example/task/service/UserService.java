@@ -59,7 +59,7 @@ public class UserService{
                 res.setStatus("User not found");
                 return res;
             }
-            if(!user.getPassword().equals(userModel.getPassword())){
+            if(!PasswordGeneratorUtility.decode(user.getPassword()).equals(userModel.getPassword())){
                 res.setStatus("Password do not match");
                 return res;
             }
@@ -87,7 +87,7 @@ public class UserService{
                 res.setStatus("User not found");
                 return res;
                 }
-            if(!user.getPassword().equals(userModel.getPassword())){
+            if(!PasswordGeneratorUtility.decode(user.getPassword()).equals(userModel.getPassword())){
                 res.setStatus("Password do not match");
                 return res;
             }
@@ -109,7 +109,7 @@ public class UserService{
         UserResponse res = new UserResponse(userModel.getUsername(),userModel.getPassword(), userModel.getAddress(), userModel.getEmail());
         if(repository.findById(userModel.getUsername()).isPresent()) {
             User user = repository.findById(userModel.getUsername()).get();
-            if (!user.getPassword().equals(userModel.getPassword())) {
+            if (!PasswordGeneratorUtility.decode(user.getPassword()).equals(userModel.getPassword())) {
                 res.setStatus("Password do not match");
                 return res;
             }
@@ -127,6 +127,11 @@ public class UserService{
 
         List<User> users =  repository.findAll();
         UserResponse res = new UserResponse(userModel.getUsername(), userModel.getPassword(), userModel.getAddress(), userModel.getEmail());
+        User user = new User();
+        if (!user.isActive()) {
+            res.setStatus("User not found");
+            return res;
+        }
         for (User us: users) {
             String decode = PasswordGeneratorUtility.decode(us.getPassword());
             if (decode.equals(userModel.getPassword())) {
